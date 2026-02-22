@@ -4,6 +4,7 @@ type CarouselItem = {
   logo?: string;
   title?: string;
   description?: string;
+  imgWidth?: string;
   bullets?: string[];
   image?: string;
 };
@@ -86,16 +87,16 @@ export function Carousel({ items = [], autoSlideInterval = 5000 }: CarouselProps
           <div key={slideIndex} className="w-full flex-shrink-0">
 
             {/* CARD */}
-            <div className="md:ml-[20px] ml-3 bg-[#191919] px-[14px] md:px-[19px] py-[20px] md:py-[20.5px] rounded-xl flex flex-col justify-start items-stretch md:flex-row md:justify-center md:items-center gap-4 border border-[#FFFFFF14]">
+            <div className="md:ml-[20px] ml-3 bg-[#191919] px-[14px] md:px-[19px] py-[20px] md:py-[20.5px] rounded-xl flex flex-col justify-start items-stretch md:flex-row md:justify-center md:items-top gap-4 border border-[#FFFFFF14]">
 
               {/* LEFT SIDE */}
-              <div className="px-4 md:w-[30%] w-full">
+              <div className="px-4 md:w-[30%] w-full pt-2.5">
 
                 {item.logo && (
                   <img
                     src={item.logo}
                     alt="logo"
-                    className="w-full max-w-[47px] object-contain pb-6"
+                    className={`w-full ${item.imgWidth} object-contain pb-6`}
                   />
                 )}
 

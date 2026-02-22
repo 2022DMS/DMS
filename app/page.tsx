@@ -6,6 +6,7 @@ import Home from "./pages/landingPage/page";
 const Page = () => {
   const [showHome, setShowHome] = useState(false);
   const [startVisible, setStartVisible] = useState(false);
+  return <Home />
 
   // Fade in the start button after animation loads
   useEffect(() => {

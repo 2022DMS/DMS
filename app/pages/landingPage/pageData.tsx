@@ -4,51 +4,42 @@
 export const carouselData = [
   {
     logo: "/images/ksw-logo.png",
-    title: "KSW Lawyers",
-    description:
-      "KSW Lawyers is a long-established full-service Canadian law firm...",
-    bullets: [
-      "Increased qualified leads for KSW Lawyers by X% through targeted digital campaigns.",
-      "Improved website conversion rate by X% via UX and CTA optimization.",
-      "Reduced cost per lead by X% with smarter audience targeting."
-    ],
-    image: "/images/ksw-website.png"
-  },
-  {
-    logo: "/images/ksw-logo.png",
-    title: "KSW",
-    description:
-      "KSW Lawyers is a long-established full-service Canadian law firm...",
-    bullets: [
-      "Increased qualified leads for KSW Lawyers by X% through targeted digital campaigns.",
-      "Improved website conversion rate by X% via UX and CTA optimization.",
-      "Reduced cost per lead by X% with smarter audience targeting."
-    ],
-    image: "/images/ksw-website.png"
-  },
-  {
-    logo: "/images/ksw-logo.png",
     title: "Lawyers",
     description:
-      "KSW Lawyers is a long-established full-service Canadian law firm...",
+      "KSW Lawyers is a long-established full-service Canadian law firm based in British Columbia, offering legal services to individuals and businesses in areas like corporate, real estate, litigation, tax, employment, and personal law.",
     bullets: [
       "Increased qualified leads for KSW Lawyers by X% through targeted digital campaigns.",
       "Improved website conversion rate by X% via UX and CTA optimization.",
       "Reduced cost per lead by X% with smarter audience targeting."
     ],
-    image: "/images/ksw-website.png"
+    image: "/images/ksw-website.png",
+    imgWidth: "max-w-[47px]"
   },
   {
-    logo: "/images/ksw-logo.png",
-    title: "KSWLawyers",
+    logo: "/images/solico_metal_logo.png",
+    title: "Solico Metal",
     description:
-      "KSW Lawyers is a long-established full-service Canadian law firm...",
+      "Solicometal is a trusted industrial metal supplier specializing in high-quality trading, processing, and distribution for manufacturers and construction partners.",
     bullets: [
-      "Increased qualified leads for KSW Lawyers by X% through targeted digital campaigns.",
-      "Improved website conversion rate by X% via UX and CTA optimization.",
-      "Reduced cost per lead by X% with smarter audience targeting."
+      "Increased qualified B2B inquiries by X% through targeted industry-focused digital campaigns.",
+      "Improved website engagement rate by X% via optimized UX, clearer product categorization, and stronger CTAs.",
+      "Reduced cost per acquisition by X% through refined audience targeting and performance-driven marketing strategies."
     ],
-    image: "/images/ksw-website.png"
+    image: "/images/solico_metal_image.png",
+    imgWidth: "max-w-[88px]"
+  },
+  {
+    logo: "/images/aether_catalyst_logo.png",
+    title: "Aether Catalyst",
+    description:
+      "Aether Catalyst drives transformation by combining strategy, technology, and performance-focused execution.",
+    bullets: [
+      "Increased qualified pipeline opportunities by X% through data-driven growth strategies.",
+      "Improved conversion rates by X% via optimized digital journeys and performance marketing.",
+      "Reduced customer acquisition costs by X% through refined targeting and strategic positioning."
+    ],
+    image: "/images/aether_catalyst_image.png",
+    imgWidth: "max-w-[80px]"
   }
 ];
 

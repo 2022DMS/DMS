@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Distinctive Marketing Solutions",
+  title: "Distinctive Marketing Solutions | Calgary Website Designer",
   description: "Distinctive Marketing Solutions is a full-service marketing agency specializing in innovative strategies and creative solutions to help businesses stand out in the digital landscape.",
   icons: {
     icon: "/favicon/favicon-3.png", 

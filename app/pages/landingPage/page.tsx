@@ -11,6 +11,7 @@ import { ClientCard } from "../../components/landingPage/ClientCard";
 import { PurpleGradientButton } from "../../components/landingPage/PurpleGradientButton";
 import { GridOverlay } from "../../components/landingPage/GridOverlay";
 import { ShadowOverlay } from "../../components/landingPage/ShadowOverlay";
+import { VideoWithOverlay } from "../../components/landingPage/VideoWithOverlay";
 import { carouselData, timelineData, accordionData } from "./pageData";
 
 export default function Home() {
@@ -69,12 +70,7 @@ export default function Home() {
 
           {/* ContainerScroll */}
           <ContainerScroll>
-            <img
-              src="/images/video-placeholder.png"
-              alt="hero"
-              className="z-10 mx-auto rounded-2xl object-cover h-full w-full object-left-top cursor-pointer"
-              draggable={false}
-            />
+            <VideoWithOverlay src="/videos/homepage_video.mp4" overlayImage="/images/play_button.png" />
           </ContainerScroll>
         </div>
       </div>
@@ -167,11 +163,11 @@ export default function Home() {
         {/* Wrapper */}
         <div className="relative flex flex-col items-center bg-transparent z-10 pt-[40px] md:pt-[105px] pb-[0px] max-w-[1440px] mx-auto md:px-10 px-3">
           {/* Hero Text */}
-          <h2 className="font-segoe font-normal text-[32px] md:text-[48px] leading-[35px] md:leading-[56px] tracking-[-1px] md:tracking-[-2px] text-center text-white align-middle pb-[50px] md:pb-[32px]">
+          <h2 className="font-segoe font-normal text-[32px] md:text-[48px] leading-[35px] md:leading-[56px] tracking-[-1px] md:tracking-[-2px] text-center text-white align-middle pb-[50px] md:pb-[61px]">
             Some of our clients
           </h2>
 
-          <div className="max-w-[662px] w-full flex flex-wrap gap-x-[11px] gap-y-[13px] md:gap-y-[0px] md:gap-x-[7.68px]">
+          <div className="max-w-[1240px] w-full flex flex-wrap gap-x-[11px] gap-y-[13px] md:gap-y-[40px] md:gap-x-[7.68px]">
             <ClientCard
               imageSrc="/images/ul.png"
               imageAlt="UL"
