@@ -4,7 +4,7 @@
 export const carouselData = [
   {
     logo: "/images/ksw-logo.png",
-    title: "Lawyers",
+    title: "KSW Lawyers",
     description:
       "KSW Lawyers is a long-established full-service Canadian law firm based in British Columbia, offering legal services to individuals and businesses in areas like corporate, real estate, litigation, tax, employment, and personal law.",
     bullets: [
