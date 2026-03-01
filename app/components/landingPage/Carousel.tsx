@@ -18,18 +18,25 @@ export function Carousel({ items = [], autoSlideInterval = 5000 }: CarouselProps
   const [index, setIndex] = useState(0);
   const touchStartX = useRef<number | null>(null);
   const touchEndX = useRef<number | null>(null);
+  const timerRef = useRef<NodeJS.Timeout | null>(null); // <-- new
 
   if (!items.length) return null;
 
   /* =========================
      AUTO SLIDE
   ========================= */
-  useEffect(() => {
-    const timer = setInterval(() => {
+  const startTimer = () => {
+    if (timerRef.current) clearInterval(timerRef.current);
+    timerRef.current = setInterval(() => {
       setIndex((prev) => (prev + 1) % items.length);
     }, autoSlideInterval);
+  };
 
-    return () => clearInterval(timer);
+  useEffect(() => {
+    startTimer(); // start on mount
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
   }, [items.length, autoSlideInterval]);
 
   /* =========================
@@ -60,6 +67,9 @@ export function Carousel({ items = [], autoSlideInterval = 5000 }: CarouselProps
       // swipe right -> prev
       setIndex((prev) => (prev - 1 + items.length) % items.length);
     }
+
+    // Reset auto-slide timer after swipe
+    startTimer(); // <-- this is all you need to add
 
     touchStartX.current = null;
     touchEndX.current = null;

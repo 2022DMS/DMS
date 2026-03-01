@@ -41,31 +41,31 @@ export default function ContactUs() {
               className="flex flex-col gap-[15px] w-full max-w-3xl mx-auto"
               onSubmit={async (e) => {
                 e.preventDefault();
-                window.location.href = "/thank-you";
-                // const form = e.currentTarget;
-                // const data = {
-                //   fullName: (form.fullName as HTMLInputElement).value,
-                //   address: (form.address as HTMLInputElement).value,
-                //   phone: (form.phone as HTMLInputElement).value,
-                //   message: (form.message as HTMLTextAreaElement).value,
-                // };
+                // window.location.href = "/thank-you";
+                const form = e.currentTarget;
+                const data = {
+                  fullName: (form.fullName as HTMLInputElement).value,
+                  address: (form.address as HTMLInputElement).value,
+                  phone: (form.phone as HTMLInputElement).value,
+                  message: (form.message as HTMLTextAreaElement).value,
+                };
 
-                // try {
-                //   const res = await fetch("/api/contact", {
-                //     method: "POST",
-                //     headers: { "Content-Type": "application/json" },
-                //     body: JSON.stringify(data),
-                //   });
+                try {
+                  const res = await fetch("/api/contact", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(data),
+                  });
 
-                //   if (res.ok) {
-                //     window.location.href = "/thank-you"; // redirect on success
-                //   } else {
-                //     alert("Failed to send message.");
-                //   }
-                // } catch (err) {
-                //   console.error(err);
-                //   alert("An error occurred while sending the message.");
-                // }
+                  if (res.ok) {
+                    window.location.href = "/thank-you"; // redirect on success
+                  } else {
+                    alert("Failed to send message.");
+                  }
+                } catch (err) {
+                  console.error(err);
+                  alert("An error occurred while sending the message.");
+                }
               }}
               >
                 {/* Row 1 */}

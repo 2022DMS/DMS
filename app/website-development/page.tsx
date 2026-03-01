@@ -4,6 +4,7 @@ import { Sparkles } from "../components/landingPage/Sparkles";
 import { PurpleGradientButton } from "../components/landingPage/PurpleGradientButton";
 import Accordion from "../components/landingPage/Accordion";
 import Testimonials from "../components/landingPage/Testimonials";
+import MobileTestimonials from "../components/landingPage/MobileTestimonials";
 import { faqs, testimonials } from "./pageData";
 import Link from "next/link";
 
@@ -98,7 +99,12 @@ export default function WebsiteDevelopment() {
               See how our clients achieved real business growth through our design, development, and digital strategy expertise.
             </p>
 
-            <Testimonials items={testimonials} />
+            <div className="hidden md:block">
+              <Testimonials items={testimonials} />
+            </div>
+            <div className="block md:hidden">
+              <MobileTestimonials items={testimonials} />
+            </div>
           </div>
         </div>
       </div>

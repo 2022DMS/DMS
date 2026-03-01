@@ -4,6 +4,7 @@ import { Sparkles } from "../components/landingPage/Sparkles";
 import { PurpleGradientButton } from "../components/landingPage/PurpleGradientButton";
 import Accordion from "../components/landingPage/Accordion";
 import Testimonials from "../components/landingPage/Testimonials";
+import MobileTestimonials from "../components/landingPage/MobileTestimonials";
 import { faqs, testimonials } from "./pageData";
 import Link from "next/link";
 
@@ -80,7 +81,7 @@ export default function GrowthAndMarketing() {
       <div className="relative">
         <div className="relative flex md:flex md:flex-row md:items-start md:justify-between flex-col justify-start items-center gap-8 bg-transparent z-10 md:pt-[134px] pt-[40px] md:pb-[102px] pb-[80px] max-w-[1440px] mx-auto md:px-10 px-3 md:gap-[54px]">
           {/* Left */}
-          <div className="flex-1">
+          <div className="w-full md:w-1/2">
             <img
               src="/images/testimonials.png"
               alt="Testimonials"
@@ -89,7 +90,7 @@ export default function GrowthAndMarketing() {
           </div>
 
           {/* Right */}
-          <div className="flex-1">
+          <div className="w-full md:w-1/2">
             <h2 className="font-segoe font-normal text-[32px] md:text-[48px] leading-[53px] md:leading-[53px] tracking-[-2px] text-center md:text-left text-white align-middle pb-[16px]">
               Trusted by Growing Teams
             </h2>
@@ -97,8 +98,12 @@ export default function GrowthAndMarketing() {
             <p className="font-segoe font-normal text-[16px] leading-[24px] tracking-[0px] text-center md:text-left text-brand-cardText pb-[32px]">
               See how our clients achieved real business growth through our design, development, and digital strategy expertise.
             </p>
-
-            <Testimonials items={testimonials} />
+            <div className="hidden md:block">
+              <Testimonials items={testimonials} />
+            </div>
+            <div className="block md:hidden">
+              <MobileTestimonials items={testimonials} />
+            </div>
           </div>
         </div>
       </div>

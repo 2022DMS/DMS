@@ -42,13 +42,13 @@ export default function Accordion({ items }: AccordionProps) {
                 {item.title}
               </h3>
 
-              <div className={`rounded-lg h-full p-[1.5px] ${
+              <div className={`cursor-pointer rounded-lg h-full p-[1.5px] ${
                     isActive 
                         ? "bg-[radial-gradient(102.5%_350.82%_at_0%_81.25%,rgba(170,91,255,0.5)_0%,rgba(151,71,255,0.5)_52.42%,rgba(124,14,221,0.5)_100%)] shadow-[0_0_14px_0_#FFFFFF4D_inset,0_0_30.3px_0_#9747FF66]" 
                         : "bg-[rgba(255,255,255,0.3)]"
                     }`}>
                 <button
-                  className={`flex items-center gap-3 justify-center font-semibold rounded-lg p-[7.93px] w-full h-full transition-all duration-500 ease-in-out ${
+                  className={`cursor-pointer flex items-center gap-3 justify-center font-semibold rounded-lg p-[7.93px] w-full h-full transition-all duration-500 ease-in-out ${
                     isActive
                       ? "bg-[radial-gradient(102.5%_350.82%_at_0%_81.25%,#AA5BFF_0%,#9747FF_52.42%,#7C0EDD_100%)]"
                       : "bg-[#101010] shadow-[inset_0_0_14px_0_#8F8F8F4D]"

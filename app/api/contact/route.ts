@@ -7,27 +7,26 @@ export async function POST(req: Request) {
     return new Response(JSON.stringify({ error: "Missing fields" }), { status: 400 });
   }
 
-  // Configure your SMTP transporter
   const transporter = nodemailer.createTransport({
-    host: "smtp.example.com", // e.g., smtp.gmail.com
-    port: 465,
+    host: process.env.SMTP_HOST,
+    port: Number(process.env.SMTP_PORT),
     secure: true,
     auth: {
-      user: "your-email@example.com",
-      pass: "your-email-password", // App Password if Gmail
+      user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PASS,
     },
   });
 
   try {
     await transporter.sendMail({
-      from: `"DMS Contact Form" <your-email@example.com>`,
+      from: `"DMS Contact Form" <${process.env.SMTP_USER}>`,
       to: "adamseid2@gmail.com",
       subject: "DMS Contact Form",
       text: `
-Full Name: ${fullName}
-Email: ${address}
-Phone: ${phone}
-Message: ${message}
+        Full Name: ${fullName}
+        Email: ${address}
+        Phone: ${phone}
+        Message: ${message}
       `,
     });
 
