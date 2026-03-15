@@ -62,17 +62,13 @@ export default function GrowthAndMarketing() {
       {/* Contact */}
       <div className="relative bg-[url('/images/contact-background.png')] bg-cover bg-center bg-no-repeat">
         <div className="relative flex flex-col items-center justify-start z-10 md:pt-[84px] pt-[40px] md:pb-[97px] pb-[40px] max-w-[1440px] mx-auto md:px-10 px-3">
-          <h2 className="font-segoe font-normal text-[48px] md:text-[64px] leading-[52px] md:leading-[64px] tracking-[-1px] text-center md:text-left text-white align-middle pb-[12px]">
+          <h2 className="font-segoe font-normal text-[48px] md:text-[64px] leading-[52px] md:leading-[64px] tracking-[-1px] text-center md:text-left text-white align-middle pb-[32px]">
             Get in touch <br className="block md:hidden" /> with us
           </h2>
 
-          <p className="max-w-[675px] font-segoe font-normal text-[16px] leading-[24px] tracking-[0px] text-center text-brand-cardText pb-[24px]">
-            Lorem ipsum dolor sit amet consectetur. Urna mattis neque arcu ac consectetur non fermentum. Nam porttitor ultrices consequat dui risus  Lorem ipsum dolor sit amet consectetur. Urna mattis neque arcu ac consectetur non fermentum. 
-          </p>
-
           {/* Gradient Button */}
           <Link href="/contact-us">
-            <PurpleGradientButton maxWidthClass="152px" imageSrc="/icons/phone.svg" imageAlt="Phone Icon" text="Book a Call" />
+            <PurpleGradientButton maxWidthClass="152px" imageSrc="/icons/phone.svg" imageAlt="Phone Icon" text="Book Your Free Consultation" />
           </Link>
         </div>
       </div>
@@ -175,8 +171,8 @@ export default function GrowthAndMarketing() {
                 </p>
               </div>
 
-              <div className="py-[8px] w-full rounded-[12px] flex justify-center bg-[linear-gradient(90deg,rgba(151,71,255,0.1)_0%,rgba(210,113,255,0.1)_100%)]">
-                <p className="font-segoe font-normal text-[14px] leading-[24px] tracking-[0px] text-left text-white">
+              <div className="py-[8px] px-[19.5px] w-full rounded-[12px] flex justify-center bg-[linear-gradient(90deg,rgba(151,71,255,0.1)_0%,rgba(210,113,255,0.1)_100%)]">
+                <p className="font-segoe font-normal text-[14px] leading-[24px] tracking-[0px] text-center text-white">
                   <span className="text-[#E47732]">*</span> In-Person Meetings by Appointment Only.
                 </p>
               </div>

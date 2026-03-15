@@ -19,6 +19,7 @@ export default function TestimonialCarousel({
 }: TestimonialCarouselProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [direction, setDirection] = useState<"left" | "right">("right");
+  const [itemsPerSlide, setItemsPerSlide] = useState(1);
   const trackRef = useRef<HTMLDivElement>(null);
   const touchStartX = useRef<number | null>(null);
   const touchEndX = useRef<number | null>(null);
@@ -26,9 +27,24 @@ export default function TestimonialCarousel({
 
   if (!items.length) return null;
 
+  useEffect(() => {
+    const updateItemsPerSlide = () => {
+      setItemsPerSlide(window.innerWidth >= 768 ? 3 : 1);
+    };
+
+    updateItemsPerSlide();
+    window.addEventListener("resize", updateItemsPerSlide);
+
+    return () => window.removeEventListener("resize", updateItemsPerSlide);
+  }, []);
+
+  useEffect(() => {
+    setActiveIndex(0);
+  }, [itemsPerSlide]);
+
   const slides: TestimonialItem[][] = [];
-  for (let i = 0; i < items.length; i += 3) {
-    slides.push(items.slice(i, i + 3));
+  for (let i = 0; i < items.length; i += itemsPerSlide) {
+    slides.push(items.slice(i, i + itemsPerSlide));
   }
 
   const totalSlides = slides.length;
@@ -104,9 +120,9 @@ export default function TestimonialCarousel({
       onMouseUp={handleTouchEnd}
       onMouseLeave={handleTouchEnd}
     >
-      <div className="flex flex-row items-center justify-between w-full">
-        <div className="w-1/2 flex flex-col items-start justify-start">
-          <h2 className="font-segoe font-normal text-[32px] md:text-[48px] leading-[35px] md:leading-[53px] tracking-[-1px] md:tracking-[-2px] text-left text-white pb-[16px]">
+      <div className="flex flex-col justify-start items-stretch w-full md:flex-row md:items-center md:justify-between gap-4">
+        <div className="w-full md:w-1/2 flex flex-col items-start justify-start">
+          <h2 className="font-segoe font-normal text-[32px] md:text-[48px] leading-[35px] md:leading-[53px] tracking-[-1px] md:tracking-[-2px] text-center md:text-left text-white pb-[16px]">
             Trusted by Growing Teams
           </h2>
 
@@ -115,7 +131,7 @@ export default function TestimonialCarousel({
           </p>
         </div>
 
-        <div className="w-1/2 flex flex-col items-end justify-end">
+        <div className="w-full md:w-1/2 flex flex-col items-center md:items-end justify-center md:justify-end">
           <div className="flex flex-row items-center gap-3">
             <button
               onClick={handlePrev}

@@ -33,7 +33,7 @@ export default function about() {
             Founder & Team Lead
           </p>
 
-          <div className="font-segoe font-[500] text-[16px] leading-[24px] text-center text-[#AAAAAA] align-middle">
+          <div className="font-segoe font-[500] text-[16px] leading-[24px] text-center text-[#AAAAAA] align-middle pb-[24px]">
             When I founded DMS, the mission was simple: serve the business owners who were being 
             
             <br />
@@ -102,6 +102,14 @@ export default function about() {
             <br />
             And we still believe that when your digital foundation is solid, everything else becomes easier to scale.
           </div>
+
+          <div className="flex flex-row items-center justify-center">
+            <img
+              src="/images/signature.png"
+              alt="Signature"
+              className="w-full max-w-[103px] object-contain"
+            />
+          </div>
         </div>
       </div>
 
@@ -112,8 +120,8 @@ export default function about() {
         <ShadowOverlay height="10%" top="80%" zIndex="z-2" />
 
         {/* Wrapper */}
-        <div className="relative flex flex-col items-stretch justify-start gap-8 md:flex-row md:items-center md:justify-between md:gap-20 bg-transparent z-10 pt-[40px] md:pt-[93px] pb-[0px] md:pb-[93px] max-w-[1440px] mx-auto md:px-10 px-3">
-          <div className="w-1/2">
+        <div className="relative flex flex-col items-stretch justify-start gap-8 md:flex-row md:items-center md:justify-between md:gap-20 bg-transparent z-10 pt-[40px] md:pt-[93px] pb-[80px] md:pb-[93px] max-w-[1440px] mx-auto md:px-10 px-3">
+          <div className="w-full md:w-1/2">
             <img
               src="/images/web-design-mission.png"
               alt="Branding Hero Image"
@@ -121,13 +129,13 @@ export default function about() {
             />
           </div>
 
-          <div className="w-1/2">
+          <div className="w-full md:w-1/2">
             <div className="pb-10 border-b border-white/30">
               <h2 className="font-segoe font-normal md:text-[48px] text-[40px] md:leading-[56px] leading-[40px] tracking-[-2px] pb-4 text-left text-white">
                 Our Mission
               </h2>
 
-              <p className="font-segoe font-normal text-[16px] leading-[24px] tracking-[0px] text-center md:text-left text-brand-cardText">
+              <p className="font-segoe font-normal text-[16px] leading-[24px] tracking-[0px] text-left text-brand-cardText">
                 To serve business owners by raising the standard in web development through transparency, ownership, responsiveness, and long-term thinking
               </p>
             </div>
@@ -137,7 +145,7 @@ export default function about() {
                 Our Vision
               </h2>
 
-              <p className="font-segoe font-normal text-[16px] leading-[24px] tracking-[0px] text-center md:text-left text-brand-cardText">
+              <p className="font-segoe font-normal text-[16px] leading-[24px] tracking-[0px] text-left text-brand-cardText">
                 To continue growing our boutique digital firm, working alongside serious business owners to build scalable foundations for long-term growth, while maintaining a focused team that values craftsmanship, trust, and exceptional customer service.
               </p>
             </div>
@@ -148,16 +156,16 @@ export default function about() {
       {/* Strategy */}
       <div className="relative">
         {/* Wrapper */}
-        <div className="relative bg-[url('/images/web-design-strategy.png')] bg-cover bg-center bg-no-repeat z-10 pt-[40px] md:pt-[369px] pb-[0px] md:pb-[93px] max-w-[1440px] mx-auto md:px-10 px-3">
-          <h2 className="font-segoe font-normal md:text-[64px] text-[36px] md:leading-[70px] leading-[44px] tracking-[-2px] pb-4 text-left text-white md:pb-[78px] pb-[67px]">
+        <div className="relative bg-[url('/images/web-design-strategy.png')] md:bg-cover bg-contain bg-top md:bg-center bg-no-repeat z-10 pt-[150px] md:pt-[369px] md:pb-[93px] max-w-[1440px] mx-auto md:px-10 px-3">
+          <h2 className="font-segoe font-normal md:text-[64px] text-[36px] md:leading-[70px] leading-[44px] tracking-[-2px] pb-4 text-left text-white md:pb-[78px] pb-[40px]">
             Built on Design, <br />
             Strategy, and Growth
           </h2>
 
           <div className="flex flex-col items-stretch justify-start gap-3 md:flex-row md:items-center md:justify-center">
-            <div className="w-1/3 flex flex-col items-center">
+            <div className="w-full md:w-1/3 flex flex-col items-center px-[22px] py-[24px]">
               <img
-                src="/images/strategic-development.svg"
+                src="/icons/strategic-development.svg"
                 alt="Branding Hero Image"
                 className="w-full object-contain max-w-[30px] pb-4"
               />
@@ -171,39 +179,39 @@ export default function about() {
               </p>
             </div>
 
-            <div className="bg-white/20 w-[1px] h-[151px]"></div>
+            <div className="bg-white/20 md:w-[1px] w-full h-[1px] md:h-[151px]"></div>
 
-            <div className="w-1/3 flex flex-col items-center">
+            <div className="w-full md:w-1/3 flex flex-col items-center px-[22px] py-[24px]">
               <img
-                src="/images/strategic-development.svg"
+                src="/icons/scalable-development.svg"
                 alt="Branding Hero Image"
                 className="w-full object-contain max-w-[30px] pb-4"
               />
 
               <h2 className="font-segoe font-normal text-[18px] leading-[24px] pb-4 text-left text-white">
-                Strategic Design
+                Scalable Development
               </h2>
 
               <p className="font-segoe font-normal text-[16px] leading-[24px] tracking-[0px] text-center text-brand-cardText">
-                We design with purpose. From brand guides to UI systems, every visual element is aligned with your positioning, audience psychology, and business goals.
+                Fast, responsive, and built to perform. Our websites are optimized for speed, usability, and future growth — ensuring seamless user experiences across devices.
               </p>
             </div>
 
-            <div className="bg-white/20 w-[1px] h-[151px]"></div>
+            <div className="bg-white/20 md:w-[1px] w-full h-[1px] md:h-[151px]"></div>
 
-            <div className="w-1/3 flex flex-col items-center">
+            <div className="w-full md:w-1/3 flex flex-col items-center px-[22px] py-[24px]">
               <img
-                src="/images/strategic-development.svg"
+                src="/icons/visibility-performance.svg"
                 alt="Branding Hero Image"
                 className="w-full object-contain max-w-[30px] pb-4"
               />
 
               <h2 className="font-segoe font-normal text-[18px] leading-[24px] pb-4 text-left text-white">
-                Strategic Design
+                Visibility & Performance
               </h2>
 
               <p className="font-segoe font-normal text-[16px] leading-[24px] tracking-[0px] text-center text-brand-cardText">
-                We design with purpose. From brand guides to UI systems, every visual element is aligned with your positioning, audience psychology, and business goals.
+                Beyond design, we drive traffic and results through SEO and performance marketing. From search rankings to paid campaigns, we help your brand get seen and chosen.
               </p>
             </div>
           </div>
