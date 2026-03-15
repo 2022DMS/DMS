@@ -3,24 +3,24 @@
 // =============================
 export const faqs = [
   {
-    title: "How long does a typical website project take?",
-    description: "Project timelines depend on the scope, features, and complexity of the website. Most standard websites are completed within 3–8 weeks, including design, development, testing, and launch.",
+    title: "What sets us apart from other marketing agencies?",
+    description: "Many marketing agencies take on as many clients as possible in order to grow revenue. In practice, this often leads to a situation where a small percentage of clients receive most of the attention, while the majority end up underserved.<br /><br /> Our approach is intentionally different. <strong>We actively work with a maximum of five marketing clients per year,</strong> which allows us to stay closely involved in both the strategy and execution of every campaign. We don’t take on marketing clients simply for the sake of increasing revenue.<br /><br /> Instead, we focus on partnering with a small number of businesses where we believe we can deliver meaningful results and provide the level of attention their marketing efforts deserve.",
   },
   {
-    title: "Can you migrate my existing website to a new platform or hosting?",
-    description: "Project timelines depend on the scope, features, and complexity of the website. Most standard websites are completed within 3–8 weeks, including design, development, testing, and launch.",
+    title: "Do you work with every business that asks for marketing support?",
+    description: "We primarily work with established businesses that already have the sales infrastructure and team in place to properly handle incoming leads. The marketing systems we implement are designed to generate a consistent flow of inquiries, so it’s important that the businesses we partner with are equipped to respond to and convert those opportunities effectively.<br /><br /> Our goal is to ensure that your marketing investment is used responsibly and produces meaningful results. If we don’t believe your business is in the right position to benefit from our marketing systems yet, we’ll always be transparent and help point you in the right direction.",
   },
   {
-    title: "Can you rebuild my website using a different programming language or framework?",
-    description: "Project timelines depend on the scope, features, and complexity of the website. Most standard websites are completed within 3–8 weeks, including design, development, testing, and launch.",
+    title: "What results have you achieved for other businesses?",
+    description: "We typically work with a small number of marketing clients at any given time, allowing us to stay closely involved in the strategy and execution of each campaign.<br /><br /> Over the years, our work has supported a wide range of outcomes. In some cases, we’ve helped businesses generate over seven figures in additional annual revenue, while in another instance our marketing and digital infrastructure supported a public company that ultimately completed a nine-figure acquisition.<br /><br /> Every business and industry is different, but our focus is always the same: building marketing systems that create measurable and meaningful growth.",
   },
   {
-    title: "Will my website be mobile-friendly and optimized for performance?",
-    description: "Project timelines depend on the scope, features, and complexity of the website. Most standard websites are completed within 3–8 weeks, including design, development, testing, and launch.",
+    title: "What marketing strategies do you typically recommend for growth?",
+    description: "Every business is different, which means every marketing strategy should be different as well. We don’t believe in the typical cookie-cutter agency model where the same strategy is applied to every client.<br /><br /> Instead, we start by building a lean, focused strategy designed to produce measurable return on investment within the first 30–60 days. Once the initial system begins generating results, we can then scale into a broader digital marketing strategy using the profits generated from those early campaigns.",
   },
   {
-    title: "Do you provide ongoing maintenance and support after launch?",
-    description: "Project timelines depend on the scope, features, and complexity of the website. Most standard websites are completed within 3–8 weeks, including design, development, testing, and launch.",
+    title: "If we’re not the right fit, can you still point us in the right direction?",
+    description: "Absolutely. Even if we’re not the right marketing partner for your business, we’re always happy to point you in the right direction.<br /><br /> We believe in being transparent and don’t keep any secrets. If we can’t work together, we’ll tell you exactly what we would do if we were in your position and leave it up to you to decide how you’d like to move forward.<br /><br /> Our goal is simply to help businesses make smarter marketing decisions, whether that means working with us or not.",
   }
 ];
 

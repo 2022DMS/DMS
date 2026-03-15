@@ -35,7 +35,7 @@ export default function Navbar() {
             {/* Links */}
             <div className="flex flex-row items-center gap-[17px] relative">
               <a href="/landingPage" className="text-white p-2.5 font-segoe font-normal text-[14px] leading-[100%] tracking-[0px]">Home</a>
-              <a href="#" className="text-white p-2.5 font-segoe font-normal text-[14px] leading-[100%] tracking-[0px]">About</a>
+              <a href="/about" className="text-white p-2.5 font-segoe font-normal text-[14px] leading-[100%] tracking-[0px]">About</a>
 
               {/* Services Mega Menu */}
               <div className="relative">
@@ -55,8 +55,8 @@ export default function Navbar() {
                 >
                   <div className="rounded-[12px] border-[0.5px] border-white/30 shadow-[0_10px_84.2px_6px_#9747FF40] rounded-lg flex flex-col py-2.5 px-[14px]">
                     <a href="/website-development" className="py-2.5 hover:bg-[#2A2A2A] text-center text-white font-segoe font-normal text-[14px] leading-[100%] tracking-[0px]">Website design</a>
-                    <a href="/branding" className="py-2.5 hover:bg-[#2A2A2A] text-center text-white font-segoe font-normal text-[14px] leading-[100%] tracking-[0px]">Branding</a>
-                    <a href="/growth-and-marketing-support" className="border-t border-b border-[#2A2A2A] py-2.5 hover:bg-[#2A2A2A] text-center text-white font-segoe font-normal text-[14px] leading-[100%] tracking-[0px]">Digital Marketing</a>
+                    <a href="/branding" className="border-t border-b border-[#2A2A2A] py-2.5 hover:bg-[#2A2A2A] text-center text-white font-segoe font-normal text-[14px] leading-[100%] tracking-[0px]">Branding</a>
+                    <a href="/growth-and-marketing-support" className="py-2.5 hover:bg-[#2A2A2A] text-center text-white font-segoe font-normal text-[14px] leading-[100%] tracking-[0px]">Digital Marketing</a>
                   </div>
                 </div>
               </div>
@@ -65,10 +65,10 @@ export default function Navbar() {
             {/* Gradient Contact Button */}
             <Link href="/contact-us">
                 <div className="z-1 rounded-xl h-full p-[1.5px] bg-[radial-gradient(102.5%_350.82%_at_0%_81.25%,#AA5BFF_0%,#9747FF_52.42%,#7C0EDD_100%)] shadow-[0_0_14px_0_#FFFFFF4D_inset,0_0_30.3px_0_#9747FF66]">
-                <button  className="flex items-center gap-3 justify-center text-white font-semibold rounded-xl bg-[radial-gradient(102.5%_350.82%_at_0%_81.25%,#AA5BFF_0%,#9747FF_52.42%,#7C0EDD_100%)] px-[29px] py-[10px] w-full h-full cursor-pointer">
+                <div  className="flex items-center gap-3 justify-center text-white font-semibold rounded-xl bg-[radial-gradient(102.5%_350.82%_at_0%_81.25%,#AA5BFF_0%,#9747FF_52.42%,#7C0EDD_100%)] px-[29px] py-[10px] w-full h-full cursor-pointer">
                     Contact Us
                     <img src="/icons/phone.svg" alt="Phone Icon" className="w-3 object-contain" />
-                </button>
+                </div>
                 </div>
             </Link>
           </div>
@@ -88,7 +88,7 @@ export default function Navbar() {
       <div className={`fixed px-3 pt-[78px] inset-0 w-full h-screen bg-brand-dark z-48 transition-transform duration-500 ease-in-out ${menuOpen ? "translate-y-0" : "-translate-y-full"}`}>
         <div className="flex flex-col items-center justify-start gap-[17px] pt-[55px]">
           <a href="/landingPage" className="text-white p-2.5 font-segoe font-normal text-[14px]">Home</a>
-          <a href="#" className="text-white p-2.5 font-segoe font-normal text-[14px]">About</a>
+          <a href="/about" className="text-white p-2.5 font-segoe font-normal text-[14px]">About</a>
 
           {/* Mobile Services Dropdown */}
           <div className="flex flex-col w-full relative max-w-[310px]">
@@ -101,7 +101,7 @@ export default function Navbar() {
             </button>
             <div className={`flex flex-col overflow-hidden transition-[max-height] duration-300 mt-2 rounded-lg ${servicesOpen ? "max-h-[300px]" : "max-h-0"}`}>
                 <a href="/website-development" className="py-2.5 hover:bg-[#2A2A2A] text-center text-white font-segoe font-normal text-[14px] leading-[100%] tracking-[0px]">Website design</a>
-                <a href="/branding" className="py-2.5 hover:bg-[#2A2A2A] text-center text-white font-segoe font-normal text-[14px] leading-[100%] tracking-[0px]">Branding</a>
+                <a href="/branding" className="border-t border-b border-[#2A2A2A] py-2.5 hover:bg-[#2A2A2A] text-center text-white font-segoe font-normal text-[14px] leading-[100%] tracking-[0px]">Branding</a>
                 <a href="/growth-and-marketing-support" className="py-2.5 hover:bg-[#2A2A2A] text-center text-white font-segoe font-normal text-[14px] leading-[100%] tracking-[0px]">Digital Marketing</a>
             </div>
           </div>

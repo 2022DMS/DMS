@@ -3,17 +3,11 @@
 // =============================
 export const carouselData = [
   {
-    logo: "/images/ksw-logo.png",
     title: "KSW Lawyers",
     description:
-      "KSW Lawyers is a long-established full-service Canadian law firm based in British Columbia, offering legal services to individuals and businesses in areas like corporate, real estate, litigation, tax, employment, and personal law.",
-    bullets: [
-      "Increased qualified leads for KSW Lawyers by X% through targeted digital campaigns.",
-      "Improved website conversion rate by X% via UX and CTA optimization.",
-      "Reduced cost per lead by X% with smarter audience targeting."
-    ],
-    image: "/images/ksw-website.png",
-    imgWidth: "max-w-[47px]"
+      "We delivered a full rebrand and digital strategy overhaul for KSW Lawyers, redeveloping their website with stronger structure, clearer positioning, and a more refined user experience, alongside performance-driven digital marketing built to support sustainable growth.",
+    image: "/images/ksw-project-image.png",
+    category: "KSW"
   },
   {
     logo: "/images/solico_metal_logo.png",

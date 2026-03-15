@@ -174,6 +174,12 @@ export default function GrowthAndMarketing() {
                   Calgary, AB T3N 1W2, Canada
                 </p>
               </div>
+
+              <div className="py-[8px] w-full rounded-[12px] flex justify-center bg-[linear-gradient(90deg,rgba(151,71,255,0.1)_0%,rgba(210,113,255,0.1)_100%)]">
+                <p className="font-segoe font-normal text-[14px] leading-[24px] tracking-[0px] text-left text-white">
+                  <span className="text-[#E47732]">*</span> In-Person Meetings by Appointment Only.
+                </p>
+              </div>
             </div>
           </div>
         </div>

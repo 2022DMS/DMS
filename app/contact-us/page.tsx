@@ -253,7 +253,7 @@ export default function ContactUs() {
                     Visit Us
                   </p>
 
-                  <div className="flex flex-row items-center justify-start gap-[10px]">
+                  <div className="flex flex-row items-center justify-start gap-[10px] pb-6">
                     <div className="p-[15px] border-[1.13px] border-[#9747FF80] rounded-[12px] bg-[#9747FF14]">
                       <img
                         src="/icons/location.svg"
@@ -273,12 +273,14 @@ export default function ContactUs() {
                       </p>
                     </div>
                   </div>
+
+                  <div className="py-[8px] w-full rounded-[12px] flex justify-center bg-[linear-gradient(90deg,rgba(151,71,255,0.1)_0%,rgba(210,113,255,0.1)_100%)]">
+                    <p className="font-segoe font-normal text-[14px] leading-[24px] tracking-[0px] text-left text-white">
+                      <span className="text-[#E47732]">*</span> In-Person Meetings by Appointment Only.
+                    </p>
+                  </div>
                 </div>
               </div>
-
-              <p className="font-segoe font-normal text-[14px] leading-[24px] text-left text-white">
-                <span className="text-[#F49725]">*</span> In-Person Meetings by Appointment Only.
-              </p>
             </div>
           </div>
         </div>

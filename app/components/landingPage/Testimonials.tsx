@@ -15,7 +15,7 @@ export type TestimonialCarouselProps = {
 
 export default function TestimonialCarousel({
   items,
-  autoSlideInterval = 5000,
+  autoSlideInterval = 10000,
 }: TestimonialCarouselProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [direction, setDirection] = useState<"left" | "right">("right");

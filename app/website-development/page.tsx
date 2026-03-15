@@ -3,9 +3,14 @@
 import { Sparkles } from "../components/landingPage/Sparkles";
 import { PurpleGradientButton } from "../components/landingPage/PurpleGradientButton";
 import Accordion from "../components/landingPage/Accordion";
-import Testimonials from "../components/landingPage/Testimonials";
+import Testimonials from "../components/landingPage/webDesign/Testimonials";
 import MobileTestimonials from "../components/landingPage/MobileTestimonials";
-import { faqs, testimonials } from "./pageData";
+import { GridOverlay } from "../components/landingPage/GridOverlay";
+import { ShadowOverlay } from "../components/landingPage/ShadowOverlay";
+import { VerticalTimeline } from "../components/landingPage/VerticalTimeline";
+import { Carousel } from "../components/landingPage/Carousel";
+
+import { faqs, testimonials, carouselData, timelineData } from "./pageData";
 import Link from "next/link";
 
 export default function WebsiteDevelopment() {
@@ -33,11 +38,72 @@ export default function WebsiteDevelopment() {
               Website <br /> Development
             </h1>
 
-            <p className="font-segoe font-normal text-[16px] leading-[24px] tracking-[0px] text-center md:text-left text-brand-cardText pb-[24px] md:pb-[46px]">
-              Website development is a practical and scalable solution for building a strong online presence while supporting your long-term business growth. At Distinctive MS, our custom-built websites are designed to combine performance, functionality, and visual appeal, helping you attract visitors, engage users, and convert them into customers with confidence.
-            </p>
+            <div className="font-segoe font-normal text-[16px] leading-[24px] tracking-[0px] text-center md:text-left text-brand-cardText pb-[16px] md:pb-[24px]">
+              <p>
+                If you’ve worked with web developers before, you know how frustrating the process can be. Missed expectations, poor communication, and a final product that doesn’t match the vision you had in mind.
+              </p>
 
-            <Accordion items={faqs} />
+              <br />
+
+              <p className="font-bold underline">
+                We take a different approach.
+              </p>
+
+              <br />
+
+              <p>
+                Our team focuses on:
+              </p>
+
+              <ul className="list-disc pl-6">
+                <li>
+                  clear communication
+                </li>
+                <li>
+                  complete custom design with no templates
+                </li>
+                <li>
+                  structured processes that ensures your website reflects exactly what your business needs
+                </li>
+              </ul>
+
+              <br />
+
+              <p>
+                We work closely with you from start to finish to bring your vision to life, and we continue to support your website after launch to keep it updated, secure, and performing properly.
+              </p>
+
+            </div>
+
+            {/* Buttons */}
+          <div className="flex md:flex-row md:items-center flex-col justify-start items-stretch gap-4 pb-[38px]">
+
+              {/* Gradient Button */}
+              <Link href="/">
+                <PurpleGradientButton maxWidthClass="177px" imageSrc="/icons/north-east-arrow.svg" imageAlt="Arrow Icon" text="Our Process" />
+              </Link>
+
+              {/* Dark Button */}
+              <Link href="/contact-us">
+                <div className="z-10">
+                  <div className="
+                      min-h-[39px] h-full
+                      flex items-center gap-3 justify-center
+                      shadow-[0_0_14px_0_#8F8F8F4D_inset]
+                      border-[0.5px] border-[#FFFFFF4D]
+                      rounded-xl 
+                      text-white font-semibold
+                      bg-[#101010]
+                      px-[29px] py-[10px]
+                      w-full h-full
+                      cursor-pointer
+                    ">
+                      Commonly Asked Questions
+                    <img src="/icons/phone.svg" alt="Phone Icon" className="w-3 object-contain" />
+                  </div>
+                </div>
+              </Link>
+            </div>
           </div>
 
           {/* Right */}
@@ -77,35 +143,75 @@ export default function WebsiteDevelopment() {
         </div>
       </div>
 
-      {/* Testimonials */}
+      {/* Projects Carasual */}
       <div className="relative">
-        <div className="relative flex md:flex md:flex-row md:items-start md:justify-between flex-col justify-start items-center gap-8 bg-transparent z-10 md:pt-[134px] pt-[40px] md:pb-[102px] pb-[80px] max-w-[1440px] mx-auto md:px-10 px-3 md:gap-[54px]">
+        {/* Gridline Overlay */}
+        <GridOverlay top="top-[-612px]" height="h-[1097px]" opacity="opacity-[0.1]" zIndex="z-1" />
+
+        {/* Wrapper */}
+        <div className="relative flex flex-col items-center bg-transparent z-10 pt-[0px] md:pt-[47px] pb-[40px] md:pb-[58px] max-w-[1440px] w-full mx-auto md:px-5">
+          {/* Hero Text */}
+          <h2 className="font-segoe font-normal text-[32px] md:text-[64px] leading-[35px] md:leading-[109px] tracking-[-1px] md:tracking-[-2px] md:px-5 text-left text-white pb-[50px]">
+            Real Projects, Real Results
+          </h2>
+
+          <Carousel items={carouselData} />
+        </div>
+      </div>
+
+      {/* FAQ */}
+      <div className="relative">
+        <div className="relative flex md:flex md:flex-row md:items-start md:justify-between flex flex-col justify-start items-center gap-8 bg-transparent z-10 md:pt-[98px] pt-[40px] md:pb-[63px] pb-[0px] max-w-[1440px] mx-auto md:px-10 px-3 gap-[39px]">
           {/* Left */}
           <div className="flex-1">
-            <img
-              src="/images/testimonials.png"
-              alt="Testimonials"
-              className="w-full object-contain"
-            />
+            <h6 className="font-segoe font-normal text-[20px] leading-[20px] tracking-[-2px] text-center md:text-left text-white align-middle">
+              Common Questions:
+            </h6>
+
+            <h2 className="font-segoe font-normal text-[56px] md:text-[48px] leading-[56px] md:leading-[56px] tracking-[-2px] text-center md:text-left text-white align-middle pb-[11px]">
+              About Our Website <br />Dev Process
+            </h2>
+
+            <p className="font-segoe font-normal text-[16px] leading-[24px] tracking-[0px] text-center md:text-left text-brand-cardText">
+              Here are a few of the most common questions business owners ask before starting a website project.
+            </p>
           </div>
 
           {/* Right */}
-          <div className="flex-1">
-            <h2 className="font-segoe font-normal text-[32px] md:text-[48px] leading-[53px] md:leading-[53px] tracking-[-2px] text-center md:text-left text-white align-middle pb-[16px]">
-              Trusted by Growing Teams
+          <div className="flex-1 md:pt-[28px]">
+            <Accordion items={faqs} />
+          </div>
+        </div>
+      </div>
+
+      {/* Section E */}
+      <div className="relative">
+        <GridOverlay top="top-[-20px]" height="h-[1200px]" opacity="opacity-[0.1]" zIndex="z-1" />
+        <ShadowOverlay height="30%" top="10%" zIndex="z-2" />
+
+        <div className="relative flex flex-col items-center justify-start md:flex-row gap-[30px] md:gap-[114px] md:justify-center md:items-start bg-transparent pt-[40px] pb-[40px] md:pt-[84px] md:pb-[49px] max-w-[1440px] mx-auto md:px-10 px-3 z-10">
+          <div className="w-full md:max-w-[501px] flex flex-col items-center md:items-start md:justify-start md:sticky md:top-[10px] z-10">
+            <h2 className="font-segoe font-normal text-[32px] md:text-[48px] leading-[35px] md:leading-[56px] tracking-[-1px] md:tracking-[-2px] text-center md:text-left text-white align-middle pb-[16px]">
+              Our process for designing <br /> your <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-[#9747FF] to-[#EBAFFF]">perfect</span> website.
             </h2>
 
-            <p className="font-segoe font-normal text-[16px] leading-[24px] tracking-[0px] text-center md:text-left text-brand-cardText pb-[32px]">
-              See how our clients achieved real business growth through our design, development, and digital strategy expertise.
+            <p className="font-segoe font-normal text-[16px] leading-[24px] tracking-[0px] text-center md:text-left text-brand-cardText pb-[24px]">
+              Our goal is to make the perfect site for your <br className="md:hidden" /> business, well within your deadline.
             </p>
 
-            <div className="hidden md:block">
-              <Testimonials items={testimonials} />
-            </div>
-            <div className="block md:hidden">
-              <MobileTestimonials items={testimonials} />
-            </div>
+            <Link href="/contact-us">
+              <PurpleGradientButton maxWidthClass="152px" imageSrc="/icons/phone.svg" imageAlt="Phone Icon" text="Book a Call" />
+            </Link>
           </div>
+
+          <VerticalTimeline cards={timelineData} />
+        </div>
+      </div>
+
+      {/* Testimonials */}
+      <div className="relative">
+        <div className="relative flex md:flex md:flex-row md:items-start md:justify-between flex-col justify-start items-center gap-8 bg-transparent z-10 md:pt-[134px] pt-[40px] md:pb-[102px] pb-[80px] max-w-[1440px] mx-auto md:px-10 px-3 md:gap-[54px]">
+          <Testimonials items={testimonials} />
         </div>
       </div>
 
@@ -173,6 +279,12 @@ export default function WebsiteDevelopment() {
                 <p className="flex-1 font-segoe font-normal text-[16px] leading-[24px] tracking-[0px] text-left text-[#F5F5F5]">
                   4310 104 Ave NE Bldg 2000 2nd floor, #2244, <br className="hidden md:block" />
                   Calgary, AB T3N 1W2, Canada
+                </p>
+              </div>
+
+              <div className="py-[8px] w-full rounded-[12px] flex justify-center bg-[linear-gradient(90deg,rgba(151,71,255,0.1)_0%,rgba(210,113,255,0.1)_100%)]">
+                <p className="font-segoe font-normal text-[14px] leading-[24px] tracking-[0px] text-left text-white">
+                  <span className="text-[#E47732]">*</span> In-Person Meetings by Appointment Only.
                 </p>
               </div>
             </div>

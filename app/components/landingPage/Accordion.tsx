@@ -81,9 +81,10 @@ export default function Accordion({ items }: AccordionProps) {
                   isActive ? "translate-y-0 opacity-100" : "-translate-y-2 opacity-0"
                 }`}
               >
-                <p className="font-segoe font-normal text-[14px] leading-[24px] tracking-[0.02em] text-left text-brand-cardText pt-3">
-                  {item.description}
-                </p>
+                <p
+                  className="font-segoe font-normal text-[14px] leading-[24px] tracking-[0.02em] text-left text-brand-cardText pt-3"
+                  dangerouslySetInnerHTML={{ __html: item.description }}
+                />
               </div>
             </div>
           </div>
