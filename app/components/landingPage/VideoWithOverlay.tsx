@@ -41,6 +41,8 @@ export const VideoWithOverlay = ({
       <video
         ref={videoRef}
         src={src}
+        poster="/images/homepage-video-poster.jpg"
+        preload="metadata"
         className="w-full h-full object-cover"
         loop={false}
         playsInline
