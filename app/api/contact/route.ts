@@ -20,7 +20,7 @@ export async function POST(req: Request) {
   try {
     await transporter.sendMail({
       from: `"DMS Contact Form" <${process.env.SMTP_USER}>`,
-      to: "info@distinctivems.com",
+      to: "adam@distinctivems.com",
       subject: "DMS Contact Form",
       text: `
         Full Name: ${fullName}
