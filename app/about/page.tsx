@@ -27,7 +27,7 @@ export default function about() {
         <div className="block md:hidden">
           <PurpleShadowOverlay height="25%" top="40%" zIndex="z-2" />
         </div>
-        <GridOverlay top="top-[0px]" height="h-[100%]" opacity="opacity-[0.3]" zIndex="z-1" />
+        <GridOverlay top="top-[0px]" height="h-[100%]" opacity="opacity-[0.1]" zIndex="z-1" />
         {/* Wrapper */}
         <div className="relative bg-transparent z-10 md:pt-[75px] pt-[56px] md:pb-[0px] pb-[0px] max-w-[843px] mx-auto md:px-10 px-3">
           {/* Hero Text */}
@@ -121,7 +121,7 @@ export default function about() {
 
       {/* Mission */}
       <div className="relative">
-        <GridOverlay top="top-[0px]" height="h-[100%]" opacity="opacity-[0.3]" zIndex="z-1" />
+        <GridOverlay top="top-[0px]" height="h-[100%]" opacity="opacity-[0.1]" zIndex="z-1" />
         <ShadowOverlay height="10%" top="10%" zIndex="z-2" />
         <ShadowOverlay height="10%" top="80%" zIndex="z-2" />
 

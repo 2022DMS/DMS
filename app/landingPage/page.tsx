@@ -220,9 +220,9 @@ export default function Home() {
 
       {/* Section C */}
       <div className="relative">
-        <GridOverlay top="top-[0px]" height="h-[100%]" opacity="opacity-[0.3]" zIndex="z-1" />
-        <ShadowOverlay height="10%" top="0%" zIndex="z-2" />
-        <ShadowOverlay height="15%" top="90%" zIndex="z-2" />
+        <GridOverlay top="top-[0px]" height="h-[100%]" opacity="opacity-[1]" zIndex="z-1" />
+        <ShadowOverlay height="25%" top="-10%" zIndex="z-2" />
+        <ShadowOverlay height="40%" top="70%" zIndex="z-2" />
 
         {/* Wrapper */}
         <div className="relative flex flex-col items-center bg-transparent z-10 pt-[0px] md:pt-[47px] pb-[40px] md:pb-[58px] max-w-[1160px] mx-auto md:px-10">
@@ -238,7 +238,7 @@ export default function Home() {
       {/* Section D */}
       <div className="relative">
         {/* Gridline Overlay */}
-        <GridOverlay top="top-[-20px]" height="h-[775px]" opacity="opacity-[0.3]" zIndex="z-1" />
+        <GridOverlay top="top-[0px]" height="h-[100%]" opacity="opacity-[0.1]" zIndex="z-1" />
 
         {/* Wrapper */}
         <div className="relative flex flex-col items-center bg-transparent z-10 pt-[40px] pb-[40px] md:pt-[98px] md:pb-[98px] max-w-[1440px] mx-auto md:px-10 px-3">
@@ -277,7 +277,7 @@ export default function Home() {
 
       {/* Section E */}
       <div className="relative">
-        <GridOverlay top="top-[-20px]" height="h-[1200px]" opacity="opacity-[0.3]" zIndex="z-1" />
+        <GridOverlay top="top-[0px]" height="h-[100%]" opacity="opacity-[0.1]" zIndex="z-1" />
         <ShadowOverlay height="30%" top="10%" zIndex="z-2" />
 
         <div className="relative flex flex-col items-center justify-start md:flex-row gap-[30px] md:gap-[114px] md:justify-center md:items-start bg-transparent pt-[40px] pb-[40px] md:pt-[84px] md:pb-[49px] max-w-[1440px] mx-auto md:px-10 px-3 z-10">

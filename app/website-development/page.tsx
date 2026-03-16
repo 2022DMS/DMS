@@ -165,7 +165,7 @@ export default function WebsiteDevelopment() {
 
       {/* Projects Carasual */}
       <div className="relative">
-        <GridOverlay top="top-[0px]" height="h-[100%]" opacity="opacity-[0.3]" zIndex="z-1" />
+        <GridOverlay top="top-[0px]" height="h-[100%]" opacity="opacity-[0.1]" zIndex="z-1" />
         <ShadowOverlay height="10%" top="0%" zIndex="z-2" />
         <ShadowOverlay height="15%" top="90%" zIndex="z-2" />
 
@@ -182,7 +182,7 @@ export default function WebsiteDevelopment() {
 
       {/* Section E */}
       <div id="our_process" className="relative">
-        <GridOverlay top="top-[0px]" height="h-[100%]" opacity="opacity-[0.3]" zIndex="z-1" />
+        <GridOverlay top="top-[0px]" height="h-[100%]" opacity="opacity-[0.1]" zIndex="z-1" />
         <ShadowOverlay height="10%" top="10%" zIndex="z-2" />
         <ShadowOverlay height="10%" top="80%" zIndex="z-2" />
 

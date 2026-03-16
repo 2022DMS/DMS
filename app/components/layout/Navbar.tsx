@@ -34,7 +34,7 @@ export default function Navbar() {
           <div className="hidden md:flex flex-row items-center justify-end gap-8 relative">
             {/* Links */}
             <div className="flex flex-row items-center gap-[17px] relative">
-              <a href="/landingPage" className="text-white p-2.5 font-segoe font-normal text-[14px] leading-[100%] tracking-[0px]">Home</a>
+              <a href="/" className="text-white p-2.5 font-segoe font-normal text-[14px] leading-[100%] tracking-[0px]">Home</a>
               <a href="/about" className="text-white p-2.5 font-segoe font-normal text-[14px] leading-[100%] tracking-[0px]">About</a>
 
               {/* Services Mega Menu */}
